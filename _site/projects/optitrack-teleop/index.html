@@ -22,8 +22,8 @@
 <meta property="og:title" content="Siqi Chen / Ice">
 
 
-  <link rel="canonical" href="http://0.0.0.0:4000/_pages/includes/intro/">
-  <meta property="og:url" content="http://0.0.0.0:4000/_pages/includes/intro/">
+  <link rel="canonical" href="http://0.0.0.0:4000/projects/optitrack-teleop/">
+  <meta property="og:url" content="http://0.0.0.0:4000/projects/optitrack-teleop/">
 
 
 
@@ -221,17 +221,108 @@
 
     
       <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        
+        <meta itemprop="headline" content="OptiTrack Teleoperation Data Capture">
         <div class="page__inner-wrap">
           <section class="page__content" itemprop="text">
             
-<p>I am a first-year master student in the <a href="https://aius.hit.edu.cn/">Key Laboratory of Autonomous Intelligent Unmanned Systems(AIUS)</a> at <strong>Harbin Institute of Technology</strong> (HIT, China).</p>
+<div style="border: 1px solid #e5e7eb; border-radius: 12px; padding: 12px 14px; margin: 10px 0 18px 0;">
+  <div style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;">
+    <div>
+      <div style="font-weight:600;">
+        System Integration + ROS2/C++ Development
+         · 2025
+      </div>
 
-<p>I am broadly interested in <strong>Embodied AI</strong> and <strong>Robotics</strong>. My current research focuses on <strong>Reinforcement Learning</strong>, <strong>Deep Learning</strong> and <strong>Robotics</strong>. I am currently looking for a research internship position in Embodied AI.
-<!-- ### Download my Resume -->
-You can download my <a href="https://tj-chen-1209.github.io/assets/resume.pdf">Resume here</a>.</p>
+      
+      <div style="margin-top:8px;">
+        
+          <span style="display:inline-block; padding:2px 10px; margin: 0 6px 6px 0; border-radius:999px; border: 1px solid #e5e7eb; font-size: 0.85rem;">
+            Teleoperation
+          </span>
+        
+          <span style="display:inline-block; padding:2px 10px; margin: 0 6px 6px 0; border-radius:999px; border: 1px solid #e5e7eb; font-size: 0.85rem;">
+            Demonstration Data
+          </span>
+        
+          <span style="display:inline-block; padding:2px 10px; margin: 0 6px 6px 0; border-radius:999px; border: 1px solid #e5e7eb; font-size: 0.85rem;">
+            ROS2
+          </span>
+        
+          <span style="display:inline-block; padding:2px 10px; margin: 0 6px 6px 0; border-radius:999px; border: 1px solid #e5e7eb; font-size: 0.85rem;">
+            NatNet
+          </span>
+        
+      </div>
+      
+    </div>
 
-<p>If you are interested in any form of academic collaboration, please feel free to email me at <a href="mailto:chentingjia1209@163.com">chentingjia1209@163.com</a>.</p>
+    <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+      <a href="https://github.com/tj-chen-1209/OptiTrack_Project">Code</a>
+      
+      
+    </div>
+  </div>
+
+  
+    <div style="margin-top:8px;">Implemented a motion-capture pose streaming module that converts OptiTrack Motive (NatNet) rigid-body tracking into ROS2 PoseStamped/TF and maps it into RViz/MoveIt2 for teleoperation demonstration capture, logging, and simulation-side verification.</div>
+  
+
+  
+    <div style="margin-top:8px;"><b>Outcome:</b> Provided a practical MoCap-to-ROS2 interface for teleoperation demonstration capture and simulation-side inspection (RViz/MoveIt2).</div>
+  
+</div>
+
+<h2 id="tldr">TL;DR</h2>
+<ul>
+  <li><strong>Problem:</strong> Teleoperation and imitation learning often require high-quality end-effector / tool pose trajectories as supervision. OptiTrack Motive provides accurate rigid-body tracking, but it is not natively exposed as standard ROS2 topics/TF for robotics pipelines.</li>
+  <li><strong>Method:</strong> Built a ROS2 module that receives Motive tracking through NatNet and outputs the rigid-body pose as <strong>ROS2 PoseStamped and TF</strong>, then mapped the pose stream into <strong>RViz/MoveIt2</strong> for simulation-side visualization and integration.</li>
+  <li><strong>Result:</strong> Enabled a practical “MoCap → ROS2 → MoveIt2” pipeline that can be recorded (e.g., via rosbag2) and reused as demonstration data for downstream embodied/teleop workflows.</li>
+</ul>
+
+<h2 id="overview">Overview</h2>
+<p>This project focuses on <strong>teleoperation demonstration data acquisition</strong>: turning OptiTrack Motive motion-capture tracking into ROS2-native interfaces that are easy to consume, log, and visualize.
+Instead of building a full teleop control loop, the core contribution is a reliable pose streaming bridge that provides high-fidelity trajectories as standard ROS2 messages (PoseStamped/TF), which can then be used by downstream systems (e.g., RViz/MoveIt2 visualization, controllers, or dataset pipelines).</p>
+
+<h2 id="my-contribution">My Contribution</h2>
+<ul>
+  <li>Implemented a ROS2 (Humble) node in C++ that connects to OptiTrack Motive via the NatNet SDK and converts rigid-body tracking into <strong>PoseStamped</strong> and <strong>TF</strong>.</li>
+  <li>Integrated the streamed pose into RViz/MoveIt2 for simulation-side mapping/visual debugging (pose follows the tracked rigid body in the scene).</li>
+  <li>Packaged the pipeline for practical use in data collection workflows, where the pose stream can be recorded and replayed as teleop demonstrations (e.g., rosbag2).</li>
+</ul>
+
+<h2 id="teleop--embodied-ai-relevance">Teleop / Embodied AI Relevance</h2>
+<p>In many embodied learning settings, a key bottleneck is collecting <strong>clean, time-aligned demonstration trajectories</strong> (especially 6DoF poses) that can serve as supervision for:</p>
+<ul>
+  <li>imitation learning / behavior cloning,</li>
+  <li>policy debugging with “what the operator intended” signals,</li>
+  <li>simulation replay and annotation.</li>
+</ul>
+
+<p>This project provides the “pose acquisition layer” by exposing motion-capture trajectories as ROS2-native data streams (PoseStamped/TF), making it straightforward to log, replay, and integrate with existing robotics stacks.</p>
+
+<h2 id="system-architecture">System Architecture</h2>
+<p><strong>Data flow:</strong>
+OptiTrack Motive → NatNet stream → ROS2 node → PoseStamped / TF → RViz / MoveIt2 mapping</p>
+
+<ul>
+  <li>Motive performs rigid-body tracking.</li>
+  <li>The node receives tracking frames and publishes:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">geometry_msgs/PoseStamped</code> (for topic-based consumers),</li>
+      <li>TF transforms (for frame-based consumers like RViz/MoveIt2).</li>
+    </ul>
+  </li>
+  <li>RViz/MoveIt2 subscribes to TF / topics to visualize and align the pose within the robot/simulation scene.</li>
+</ul>
+
+<h2 id="technical-notes">Technical Notes</h2>
+<ul>
+  <li><strong>ROS2:</strong> Humble</li>
+  <li><strong>MoveIt2 / RViz:</strong> visualization + simulation-side mapping</li>
+  <li><strong>Interface:</strong> NatNet SDK (OptiTrack Motive)</li>
+  <li><strong>Outputs:</strong> PoseStamped and TF (for easy integration with standard robotics tools)</li>
+</ul>
+
 
           </section>
         </div>

@@ -1,0 +1,72 @@
+- id: libero-grootn1.6
+  title: "GR00T-N1.6 Fine-tuning on LIBERO"
+  subtitle: "3B VLA model · PEFT training · 97.8% avg success"
+  period: "2026"
+  role: "End-to-end fine-tuning + evaluation infrastructure"
+  keywords: ["VLA", "Language-conditioned Manipulation", "LIBERO", "GR00T-N1.6"]
+  one_liner: "Fine-tuned NVIDIA GR00T-N1.6 (3B VLA) on four LIBERO suites with a parameter-efficient recipe (train projector + diffusion decoder, freeze vision/LLM), and achieved 97.8% average success (782/800) with released, benchmark-validated checkpoints."
+  highlights:
+    - "Parameter-efficient training: froze vision encoder + LLM, trained projector + diffusion decoder (~40% trainable params)"
+    - "Config-driven parallel evaluation (5 envs) with automatic video recording and CSV summaries"
+    - "Released 4 validated fine-tuned checkpoints on HuggingFace (Spatial/Object/Goal/LIBERO-10)"
+  outcome: "97.8% success (782/800 episodes) across 4 LIBERO suites; +0.8% over the published baseline under the same evaluation protocol."
+  page: "/projects/libero-grootn1.6/"
+  links:
+    code: "https://github.com/tj-chen-1209/Libero_GR00T"
+    video: ""
+    report: ""
+
+- id: libero-rdt
+  title: "RDT Fine-tuning on LIBERO"
+  subtitle: "Language-conditioned manipulation (Full FT vs LoRA)"
+  period: "2025"
+  role: "Lead implementer (data → training → evaluation)"
+  keywords: ["Imitation Learning", "Diffusion Policy", "LIBERO", "DeepSpeed", "LoRA"]
+  one_liner: "Built an end-to-end supervised fine-tuning pipeline for Robotics Diffusion Transformer (RDT) on LIBERO (HDF5 parsing, SigLIP-style vision preprocessing, T5-XXL embedding caching, DeepSpeed training, and automated checkpoint evaluation), and quantified key tradeoffs (Full FT 76–94% vs LoRA ~20%)."
+  highlights:
+    - "Implemented LIBERO HDF5 → RDT input pipeline (state/action remapping, SigLIP-style image preprocessing, augmentation)"
+    - "Added T5-XXL language embedding caching to avoid repeated encoding (~30% training speedup)"
+    - "Systematic comparison: Full fine-tuning reaches 76–94% (suite-dependent) while LoRA saturates around ~20%"
+  outcome: "Identified practical bottlenecks and levers: inference dominates evaluation time (~375 ms/step, ~69%), and diffusion steps (H) + action chunk length (N) significantly affect success rate."
+  page: "/projects/libero-rdt/"
+  links:
+    code: "https://github.com/tj-chen-1209/Libero_RDT"
+    video: ""
+    report: ""
+
+- id: rlinf-rdt
+  title: "RDT Integration into RLinf"
+  subtitle: "Diffusion policy as an RL-compatible agent (BC eval ready)"
+  period: "2026"
+  role: "Core implementer (model + env interface + evaluation)"
+  keywords: ["Reinforcement Learning", "Diffusion Policy", "RLinf", "LIBERO"]
+  one_liner: "Integrated a diffusion-based manipulation policy (RDT) into the RLinf framework by aligning observations (including joint proprioception), implementing DDPM action-chunk sampling and LIBERO action extraction, and enabling checkpoint-based evaluation; PPO-style RL fine-tuning is in progress due to diffusion log-probability requirements."
+  highlights:
+    - "Wrapped RDT as an RLinf policy with DDPM-based action generation and action-space extraction for LIBERO execution"
+    - "Extended LIBERO env + RLinf I/O to include 9-DoF joint proprioception required by RDT (arm + gripper)"
+    - "Identified the key RL blocker: diffusion policies do not directly provide action log-probabilities required by PPO-style algorithms (implementation in progress)"
+  outcome: "Evaluation pipeline works with pretrained/fine-tuned RDT checkpoints on LIBERO; PPO-style RL fine-tuning is under development due to diffusion log-probability challenges."
+  page: "/projects/rlinf-rdt/"
+  links:
+    code: "https://github.com/tj-chen-1209/RLinf-cl"
+    video: ""
+    report: ""
+
+
+- id: optitrack-teleop
+  title: "OptiTrack Teleoperation Data Capture"
+  subtitle: "NatNet → PoseStamped/TF → RViz/MoveIt2"
+  period: "2025"
+  role: "System Integration + ROS2/C++ Development"
+  keywords: ["Teleoperation", "Demonstration Data", "ROS2", "NatNet"]
+  one_liner: "Implemented a motion-capture pose streaming module that converts OptiTrack Motive (NatNet) rigid-body tracking into ROS2 PoseStamped/TF and maps it into RViz/MoveIt2 for teleoperation demonstration capture, logging, and simulation-side verification."
+  highlights:
+    - "Bridged OptiTrack Motive (NatNet) rigid-body tracking into ROS2 as PoseStamped / TF for downstream robotics pipelines"
+    - "Enabled RViz/MoveIt2-side pose mapping and visualization for rapid iteration and debugging of teleop demonstrations"
+    - "Supports dataset collection by recording the pose stream (e.g., rosbag2) as supervised signals for imitation learning"
+  outcome: "Provided a practical MoCap-to-ROS2 interface for teleoperation demonstration capture and simulation-side inspection (RViz/MoveIt2)."
+  page: "/projects/optitrack-teleop/"
+  links:
+    code: "https://github.com/tj-chen-1209/OptiTrack_Project"
+    video: ""
+    report: ""

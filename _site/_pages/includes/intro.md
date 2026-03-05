@@ -1,8 +1,8 @@
 
-Hi! I am a CS PhD student at <a href="https://www.kaust.edu.sa/en">KAUST</a> beginning from 2021. My supervisor is Prof. <a href="https://engineering.nd.edu/faculty/xiangliang-zhang/"> Xiangliang Zhang</a> and Prof. <a href="https://www.kaust.edu.sa/en/study/faculty/xin-gao/">Xin Gao</a>. 
-Prior to KAUST, I got my B.S degree in Computer Science at <a href="https://en.whu.edu.cn//">Wuhan University</a> supervised by  Prof. <a href="http://nisplab.whu.edu.cn/">Qian Wang</a>  and my M.S degree in <a href="https://english.pku.edu.cn/">Peking University</a>, supervised by Prof. <a href="http://ai.ruc.edu.cn/english/GSAI_FACULTY/28026f7425324f61991c70d279372d13.htm">Rui Yan</a> and Prof. <a href="https://www.icst.pku.edu.cn/zhaodongyan/en/">Dongyan Zhao</a>.
+I am a first-year master student in the [Key Laboratory of Autonomous Intelligent Unmanned Systems(AIUS)](https://aius.hit.edu.cn/) at **Harbin Institute of Technology** (HIT, China).
 
+I am broadly interested in **Embodied AI** and **Robotics**. My current research focuses on **Reinforcement Learning**, **Deep Learning** and **Robotics**. I am currently looking for a research internship position in Embodied AI.
+<!-- ### Download my Resume -->
+You can download my [Resume here](https://tj-chen-1209.github.io/assets/resume.pdf).
 
-My research interest includes summarization, dialog system, text generation, and LLM for science. I have published more than 30 papers at the top international AI conferences.  If you are seeking any form of academic cooperation, please feel free to email me at [xiuying.chen@kaust.edu.sa](mailto:xiuying.chen@kaust.edu.sa).
-
-*I am currently on the job market!*
+If you are interested in any form of academic collaboration, please feel free to email me at [chentingjia1209@163.com](mailto:chentingjia1209@163.com).
