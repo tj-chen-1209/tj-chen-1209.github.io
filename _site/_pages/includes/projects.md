@@ -9,8 +9,7 @@
 {% include projects.md %}
 
 # 💻 Internships
-- *2025.10 - 2026.02*, PKU-PsiBot Joint Lab,Peking.
-- *2025.07 - 2025.09*, Standard Robotics,Shenzhen. 
+{% include internships_timeline.html %}
 
 <span class='anchor' id='-services'></span>
 

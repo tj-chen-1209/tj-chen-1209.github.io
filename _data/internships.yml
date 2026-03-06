@@ -1,13 +1,13 @@
 - org: "PKU–PsiBot Joint Lab"
   location: "Beijing, China"
-  start: "2025-10"
+  start: "2025-11"
   end: "2026-02"
   role: "Research Intern"
   logos:
     - "/images/logos/pku.png"
     - "/images/logos/psibot.png"
   bullets:
-    - "Embodied AI research internship (details available upon request)."
+    - "Embodied AI research internship."
 
 - org: "Standard Robots"
   location: "Shenzhen, China"
@@ -17,4 +17,4 @@
   logos:
     - "/images/logos/standard_robots.png"
   bullets:
-    - "Worked on embodied AI / robotics engineering tasks (details available upon request)."
+    - "Worked on robotics engineering tasks."
