@@ -1,13 +1,25 @@
-
 <span class='anchor' id='-publications'></span>
 
-# 📝 Publications 
-## 🎙 Paper overview
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Self-Foveate</div><img src='images/self-foveate-overview.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1"> -->
-`Findings of YAC 2025` [Probabilistic Path Planning for Cooperative Target Tracking in Urban Area Using UAVs](https://ieeexplore.ieee.org/document/11150065), Guoxiao Liu, **Siqi Chen**, Yang Zhou, Weiran Yao. 
-- Proposes a **probabilistic path planning algorithm** to track multiple ground moving targets using unmanned aerial vehicles methodology.
-- Solves the target tracking problem in urban environments by Monte Carlo experimental.
+# 📝 Publications
 
-<!-- </div>
-</div> -->
+<div style="border: 1px solid #e5e7eb; border-radius: 14px; padding: 16px 18px; margin: 12px 0;">
+  <div style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;">
+    <div>
+      <div style="font-size:1.15rem; font-weight:700; line-height:1.2;">
+        ResMerge
+      </div>
+      <div style="margin-top:6px; opacity:0.9;">
+        <span style="display:inline-block; padding:2px 10px; border-radius:999px; border:1px solid #e5e7eb; font-size:0.85rem;">
+          ICML 2026 · Under Review
+        </span>
+        <span style="display:inline-block; padding:2px 10px; border-radius:999px; border:1px solid #e5e7eb; font-size:0.85rem; margin-left:6px;">
+          4th Author
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:10px;">
+    <b>Contributions:</b> Small-model ablation experiments on <b>LIBERO-Object</b> (single RTX 4090), evaluation scripts (result aggregation + plots), and core paper figures (teaser + method diagram).
+  </div>
+</div>
