@@ -273,7 +273,7 @@
 <h2 id="tldr">TL;DR</h2>
 <ul>
   <li><strong>Problem:</strong> Fine-tuning large vision-language-action (VLA) models on language-conditioned manipulation benchmarks requires careful embodiment mapping, scalable training, and reliable evaluation.</li>
-  <li><strong>Method:</strong> Built an end-to-end fine-tuning pipeline for <strong>NVIDIA GR00T-N1.6 (3B)</strong> on <strong>LIBERO</strong>, using a parameter-efficient strategy (freeze vision + LLM; train projector + diffusion decoder), <strong>DeepSpeed ZeRO-2</strong>, and a config-driven parallel evaluation system with video recording.</li>
+  <li><strong>Method:</strong> Reuse end-to-end fine-tuning pipeline for <strong>NVIDIA GR00T-N1.6 (3B)</strong> on <strong>LIBERO</strong>, using a parameter-efficient strategy (freeze vision + LLM; train projector + diffusion decoder), <strong>DeepSpeed ZeRO-2</strong>, and a config-driven parallel evaluation system with video recording.</li>
   <li><strong>Result:</strong> Achieved <strong>97.8% average success</strong> (782/800 episodes) across <strong>40 tasks from 4 LIBERO suites</strong>, surpassing the published baseline by <strong>+0.8%</strong> under the same evaluation protocol. Released <strong>4 validated checkpoints</strong> on HuggingFace.</li>
 </ul>
 
@@ -321,7 +321,7 @@ My focus is not only training, but also building a reproducible system: dataset 
 </ul>
 
 <h3 id="4-automated-evaluation-framework-parallel-envs--videos">4) Automated evaluation framework (parallel envs + videos)</h3>
-<p>Built a configuration-driven evaluation system:</p>
+<p>Configuration-driven evaluation system:</p>
 <ul>
   <li>YAML configs per suite (<code class="language-plaintext highlighter-rouge">examples/LIBERO/eval/config/</code>)</li>
   <li><strong>Parallel evaluation</strong> with 5 concurrent environments</li>

@@ -4,4 +4,4 @@ My research interests lie in **Embodied AI and Robotics**, especially **learning
 
 I am seeking a **visiting research internship throughout 2026**(6–12 months). I hope to work under close mentorship, contribute to a strong research direction, and deliver **high-quality, publishable results**, with the goal of making at least **one top-tier conference submission in 2026**.
 
-If you are interested in collaboration or hosting, please feel free to contact me at **[chentingjia1209@163.com](mailto:chentingjia1209@163.com).**. You can also download my CV [here](https://tj-chen-1209.github.io/assets/resume.pdf).
+If you are interested in collaboration or hosting, please feel free to contact me at **[chentingjia1209@163.com](mailto:chentingjia1209@163.com)**. You can also download my CV [here](/assets/resume_2026.pdf).

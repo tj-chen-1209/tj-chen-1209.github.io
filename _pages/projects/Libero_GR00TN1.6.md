@@ -8,7 +8,7 @@ project_id: libero-grootn1.6
 
 ## TL;DR
 - **Problem:** Fine-tuning large vision-language-action (VLA) models on language-conditioned manipulation benchmarks requires careful embodiment mapping, scalable training, and reliable evaluation.
-- **Method:** Built an end-to-end fine-tuning pipeline for **NVIDIA GR00T-N1.6 (3B)** on **LIBERO**, using a parameter-efficient strategy (freeze vision + LLM; train projector + diffusion decoder), **DeepSpeed ZeRO-2**, and a config-driven parallel evaluation system with video recording.
+- **Method:** Reuse end-to-end fine-tuning pipeline for **NVIDIA GR00T-N1.6 (3B)** on **LIBERO**, using a parameter-efficient strategy (freeze vision + LLM; train projector + diffusion decoder), **DeepSpeed ZeRO-2**, and a config-driven parallel evaluation system with video recording.
 - **Result:** Achieved **97.8% average success** (782/800 episodes) across **40 tasks from 4 LIBERO suites**, surpassing the published baseline by **+0.8%** under the same evaluation protocol. Released **4 validated checkpoints** on HuggingFace.
 
 ## Overview
@@ -45,7 +45,7 @@ Training highlights:
 - Large effective batch size via gradient accumulation
 
 ### 4) Automated evaluation framework (parallel envs + videos)
-Built a configuration-driven evaluation system:
+Configuration-driven evaluation system:
 - YAML configs per suite (`examples/LIBERO/eval/config/`)
 - **Parallel evaluation** with 5 concurrent environments
 - Automatic logging (CSV + detailed logs)
