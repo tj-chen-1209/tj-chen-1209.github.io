@@ -1,0 +1,51 @@
+.page__content {
+  .home-kicker { margin-bottom: 0.45rem; color: #526977; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+  .home-intro h1 { margin: 0 0 1.1rem; padding: 0; border: 0; font-size: clamp(1.6rem, 3vw, 2.2rem); line-height: 1.2; letter-spacing: -0.025em; }
+  .opportunity { margin: 1.4rem 0 2rem; padding: 1.2rem 1.3rem; background: #f2f7f9; border-left: 3px solid #2a647a; border-radius: 0 8px 8px 0; }
+  .opportunity > strong { display: block; color: #214f63; line-height: 1.45; }
+  .opportunity p { margin: 0.65rem 0 1rem; font-size: 0.9rem; line-height: 1.6; }
+  .profile-actions { display: flex; gap: 0.7rem; flex-wrap: wrap; }
+  .profile-action { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.6rem 0.9rem; border: 1px solid #b5c7ce; border-radius: 5px; color: #214f63; text-decoration: none; font-size: 0.85rem; font-weight: 600; }
+  .profile-action--primary { color: #fff; background: #245c72; border-color: #245c72; }
+  .file-type { font-size: 0.65rem; opacity: 0.85; }
+  .home-section-title { margin: 2rem 0 1rem; padding-bottom: 0.6rem; border-bottom: 1px solid #dce3e7; font-size: 1.35rem; line-height: 1.35; }
+  .section-intro { color: #596975; font-size: 0.9rem; }
+  .project-card { margin: 0.85rem 0; padding: 1.15rem 1.2rem; border: 1px solid #dce3e7; border-radius: 8px; }
+  .project-card__heading, .experience-entry__heading { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 0.4rem 1rem; }
+  .project-card h3, .experience-entry h3 { margin: 0; font-size: 1rem; line-height: 1.5; }
+  .project-card h3 { flex: 1 1 15rem; }
+  .project-card h3 a { color: #214f63; text-decoration: none; }
+  .project-card p { margin: 0.65rem 0; font-size: 0.9rem; line-height: 1.65; }
+  .project-card__period, .experience-date { color: #657480; font-size: 0.78rem; white-space: nowrap; }
+  .project-card .project-card__result { color: #214f63; font-size: 0.83rem; font-weight: 600; }
+  .project-status { display: inline-block; margin: 0.5rem 0 0; padding: 0.2rem 0.55rem; background: #f5f1e7; border: 1px solid #e1d8bd; border-radius: 4px; color: #6a5426; font-size: 0.73rem; }
+  .project-card__footer { display: flex; align-items: center; justify-content: space-between; gap: 0.6rem 1rem; flex-wrap: wrap; margin-top: 0.85rem; }
+  .project-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; padding: 0; margin: 0; list-style: none; }
+  .project-tags li { margin: 0; padding: 0.2rem 0.45rem; background: #f3f5f6; border-radius: 4px; color: #566570; font-size: 0.68rem; }
+  .project-links { display: flex; gap: 1rem; font-size: 0.8rem; }
+  .additional-projects { margin: 1.2rem 0; }
+  .additional-projects summary { padding: 0.7rem 0; cursor: pointer; color: #214f63; font-size: 0.85rem; font-weight: 600; }
+  .experience-entry { padding: 0.25rem 0 1.1rem 1rem; margin: 0 0 1.1rem; border-left: 2px solid #dce3e7; }
+  .experience-entry:last-child { padding-bottom: 0; }
+  .experience-entry__identity { display: flex; align-items: center; gap: 0.75rem; min-width: 0; }
+  .experience-logos { display: flex; flex-shrink: 0; gap: 0.25rem; }
+  .experience-logos img { width: 36px; height: 36px; object-fit: contain; border: 1px solid #e5e9ec; border-radius: 5px; padding: 3px; }
+  .experience-entry .experience-role { margin: 0.1rem 0 0; color: #657480; font-size: 0.77rem; line-height: 1.5; }
+  .experience-entry .experience-date { margin: 0; }
+  .experience-entry ul { padding-left: 1.1rem; margin: 0.65rem 0 0; }
+  .experience-entry li { font-size: 0.85rem; line-height: 1.65; }
+  .manuscript .manuscript-author { color: #657480; font-size: 0.8rem; }
+  a:focus-visible, summary:focus-visible { outline: 2px solid #245c72; outline-offset: 4px; }
+}
+
+@media (max-width: 600px) {
+  .page__content {
+    .project-card { padding: 1rem; }
+    .project-card__heading { display: block; }
+    .project-card__period { display: block; margin-top: 0.3rem; }
+    .experience-entry__heading { display: block; }
+    .experience-entry .experience-date { margin-top: 0.4rem; }
+    .experience-logos { flex-direction: column; }
+    .opportunity { padding: 1rem; }
+  }
+}

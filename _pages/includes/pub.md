@@ -1,25 +1,10 @@
-<span class='anchor' id='-publications'></span>
+<h2 id="-publications" class="home-section-title">Research Manuscript</h2>
 
-# 📝 Research Manuscripts
-
-<div style="border: 1px solid #e5e7eb; border-radius: 14px; padding: 16px 18px; margin: 12px 0;">
-  <div style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;">
-    <div>
-      <div style="font-size:1.15rem; font-weight:700; line-height:1.2;">
-        ResMerge
-      </div>
-      <div style="margin-top:6px; opacity:0.9;">
-        <span style="display:inline-block; padding:2px 10px; border-radius:999px; border:1px solid #e5e7eb; font-size:0.85rem;">
-          Under Review
-        </span>
-        <span style="display:inline-block; padding:2px 10px; border-radius:999px; border:1px solid #e5e7eb; font-size:0.85rem; margin-left:6px;">
-          4th Author
-        </span>
-      </div>
-    </div>
+<article class="project-card manuscript">
+  <div class="project-card__heading">
+    <h3>ResMerge</h3>
+    <span class="project-status">Under Review</span>
   </div>
-
-  <div style="margin-top:10px;">
-    <b>Contributions:</b> Small-model ablation experiments on <b>LIBERO-Object</b> (single RTX 4090), evaluation scripts (result aggregation + plots), and core paper figures (teaser + method diagram).
-  </div>
-</div>
+  <p class="manuscript-author">Fourth author</p>
+  <p>Contributed small-model ablation experiments on <strong>LIBERO-Object</strong> using a single RTX 4090, evaluation scripts for result aggregation and plotting, and core paper figures (teaser and method diagram).</p>
+</article>

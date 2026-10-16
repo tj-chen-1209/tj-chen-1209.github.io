@@ -1,7 +1,17 @@
-I am a Master’s student at the [Key Laboratory of Autonomous Intelligent Unmanned Systems (AIUS)](https://aius.hit.edu.cn/), Harbin Institute of Technology (HIT), China.
+<div class="home-intro">
+  <p class="home-kicker">Embodied AI · Robotics</p>
+  <h1>Dexterous manipulation &amp; robot learning</h1>
+</div>
 
-My research interests lie in **Embodied AI and Robotics**, especially **dexterous manipulation**, **robot learning**, and **vision-language-action (VLA) models**. My experience spans dexterous-hand teleoperation, demonstration data collection, and policy fine-tuning and evaluation. I am also interested in reinforcement learning for generalizable robot control.
+I am a Master’s student at the [Key Laboratory of Autonomous Intelligent Unmanned Systems (AIUS)](https://aius.hit.edu.cn/), **Harbin Institute of Technology (HIT)**, China.
 
-I am seeking **Research Assistant (RA) or research internship opportunities in 2027**, with a focus on dexterous manipulation and embodied learning. I hope to contribute hands-on robotics engineering, training and evaluation pipelines, and careful experiments to a research team.
+I work on **dexterous-hand teleoperation**, **motion retargeting**, and **vision-language-action (VLA) policy fine-tuning and evaluation**. My research interests include learning dexterous skills and reinforcement learning for generalizable robot control.
 
-For opportunities or collaboration, please contact me at **[chentingjia1209@163.com](mailto:chentingjia1209@163.com)**. Download my **[CV](/assets/resume_2027.pdf)**.
+<aside class="opportunity" aria-label="Research opportunities">
+  <strong>Seeking RA or research internship opportunities in 2027</strong>
+  <p>I hope to contribute hands-on robotics engineering, reproducible training and evaluation pipelines, and careful experiments to a team working on dexterous manipulation or embodied learning.</p>
+  <div class="profile-actions">
+    <a class="profile-action profile-action--primary" href="/assets/resume_2027.pdf">Download CV <span class="file-type">PDF</span></a>
+    <a class="profile-action" href="mailto:chentingjia1209@163.com">Contact me</a>
+  </div>
+</aside>

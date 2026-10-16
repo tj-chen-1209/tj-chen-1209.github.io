@@ -3,20 +3,23 @@ main:
   - title: "About Me"
     url: "/#about-me"
 
-  - title: "News"
-    url: "/#-news"
+  - title: "Experience"
+    url: "/#-internships"
 
   - title: "Projects"
     url: "/#-projects"
 
-  - title: "Internships"
-    url: "/#-internships"
-
   - title: "Research"
     url: "/#-publications"
 
+  - title: "News"
+    url: "/#-news"
+
   - title: "Awards"
     url: "/#-awards"
+
+  - title: "CV"
+    url: "/assets/resume_2027.pdf"
 
   # - title: "Services"
   #   url: "/#-services"

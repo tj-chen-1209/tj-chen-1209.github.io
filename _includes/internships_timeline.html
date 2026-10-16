@@ -1,51 +1,19 @@
-<div style="margin-top: 10px;">
-  {% assign items = site.data.internships %}
-  {% for it in items %}
-  <div style="display:flex; gap:14px; margin: 14px 0;">
-    <!-- left: timeline line + dot -->
-    <div style="display:flex; flex-direction:column; align-items:center; width:18px;">
-      <div style="width:10px; height:10px; border-radius:999px; border:2px solid #cbd5e1; background:white; margin-top:6px;"></div>
-      {% if forloop.last == false %}
-      <div style="flex:1; width:2px; background:#e5e7eb; margin-top:6px;"></div>
-      {% endif %}
-    </div>
-
-    <!-- right: card -->
-    <div style="flex:1; border: 1px solid #e5e7eb; border-radius: 14px; padding: 14px 16px;">
-      <div style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; align-items:center;">
-        <div style="display:flex; gap:12px; align-items:center;">
-          <!-- multiple logos -->
-          <div style="display:flex; gap:8px; align-items:center;">
-            {% if it.logos and it.logos.size > 0 %}
-              {% for lg in it.logos %}
-                <img src="{{ lg }}" alt="{{ it.org }} logo"
-                     style="width:44px; height:44px; object-fit:contain; border-radius:10px; border:1px solid #e5e7eb; padding:6px; background:white;">
-              {% endfor %}
-            {% endif %}
-          </div>
-
-          <div>
-            <div style="font-weight:700; font-size:1.05rem; line-height:1.2;">{{ it.org }}</div>
-            <div style="opacity:0.85; margin-top:2px;">
-              {% if it.role and it.role != "" %}{{ it.role }}{% endif %}
-              {% if it.location and it.location != "" %} · {{ it.location }}{% endif %}
-            </div>
-          </div>
+<div class="experience-list">
+  {% for it in site.data.internships %}
+  <article class="experience-entry">
+    <div class="experience-entry__heading">
+      <div class="experience-entry__identity">
+        <div class="experience-logos" aria-hidden="true">
+          {% for logo in it.logos %}<img src="{{ logo }}" alt="" width="40" height="40" loading="lazy">{% endfor %}
         </div>
-
-        <div style="opacity:0.8; font-weight:600;">
-          {{ it.start }} – {{ it.end }}
+        <div>
+          <h3>{{ it.org | escape }}</h3>
+          <p class="experience-role">{{ it.role | escape }}{% if it.location %} · {{ it.location | escape }}{% endif %}</p>
         </div>
       </div>
-
-      {% if it.bullets and it.bullets.size > 0 %}
-      <ul style="margin: 10px 0 0 20px;">
-        {% for b in it.bullets %}
-        <li>{{ b }}</li>
-        {% endfor %}
-      </ul>
-      {% endif %}
+      <p class="experience-date">{{ it.start }} – {{ it.end }}</p>
     </div>
-  </div>
+    <ul>{% for bullet in it.bullets %}<li>{{ bullet | escape }}</li>{% endfor %}</ul>
+  </article>
   {% endfor %}
 </div>

@@ -39,6 +39,7 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+@import "homepage";
 
 .paper-box {
     display: flex;
@@ -87,15 +88,7 @@
 
 }
 
-$scroll_offset : 2em;
-h1:before, .anchor:before { 
-    content: ''; 
-    display: block; 
-    position: relative; 
-    width: 0; 
-    height: $scroll_offset; 
-    margin-top: -$scroll_offset;
-}
+h1, h2, .anchor { scroll-margin-top: 5rem; }
 
 /* 页脚高度调整样式覆盖 */
 .page__footer {
