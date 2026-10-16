@@ -1,3 +1,13 @@
+- org: "PsiBot"
+  start: "2026-05"
+  end: "2026-08"
+  role: "Robotics Engineering Intern"
+  logos:
+    - "/images/logos/psibot.png"
+  bullets:
+    - "Trained vision-language-action (VLA) models to perform material sorting."
+    - "Developed exoskeleton-glove teleoperation for Wuji (20 DoF) and DH01 (21 DoF) hands, including retargeting and ROS2 hardware integration."
+
 - org: "PKU–PsiBot Joint Lab"
   location: "Beijing, China"
   start: "2025-11"
@@ -7,7 +17,7 @@
     - "/images/logos/pku.png"
     - "/images/logos/psibot.png"
   bullets:
-    - "Embodied AI research internship."
+    - "Supported embodied robotics research through system integration, experiment tooling, and training/evaluation workflows."
 
 - org: "Standard Robots"
   location: "Shenzhen, China"
@@ -17,4 +27,4 @@
   logos:
     - "/images/logos/standard_robots.png"
   bullets:
-    - "Worked on robotics engineering tasks."
+    - "Built teleoperation and data collection workflows, and contributed to robot system debugging and NVIDIA Jetson-based development."

@@ -1,0 +1,17 @@
+{% assign demos = site.data.demos %}
+{% if include.group %}{% assign demos = demos | where: "group", include.group %}{% endif %}
+<div class="demo-gallery">
+  {% for demo in demos %}
+  <figure class="demo-card" id="{{ demo.id }}">
+    <video controls playsinline preload="metadata" width="{{ demo.width }}" height="{{ demo.height }}" poster="{{ demo.poster | relative_url }}" aria-label="{{ demo.title | escape }}" aria-describedby="{{ demo.id }}-description">
+      <source src="{{ demo.video | relative_url }}" type="video/mp4">
+      Your browser does not support embedded video. <a href="{{ demo.video | relative_url }}">Open the MP4 video</a>.
+    </video>
+    <figcaption>
+      <h3>{{ demo.title | escape }}</h3>
+      <p id="{{ demo.id }}-description">{{ demo.description | escape }}</p>
+      <a href="{{ demo.video | relative_url }}" aria-label="Open video: {{ demo.title | escape }}">Open video <span aria-hidden="true">↗</span></a>
+    </figcaption>
+  </figure>
+  {% endfor %}
+</div>

@@ -1,4 +1,48 @@
+- id: psibot-dexterous-teleop
+  featured: true
+  summary: "Mapped exoskeleton-glove motion to Wuji (20 DoF) and DH01 (21 DoF) hands, combining constrained retargeting with ROS2 visualization and hardware control."
+  result_summary: "Pinocchio + NLopt retargeting; Ruckig trajectory smoothing."
+  title: "Exoskeleton-Glove Teleoperation for Dexterous Hands"
+  subtitle: "Glove-to-hand motion retargeting · ROS2 integration"
+  period: "May–Aug 2026"
+  role: "Robotics engineering intern at PsiBot"
+  keywords: ["Dexterous Manipulation", "Teleoperation", "Motion Retargeting", "ROS2"]
+  one_liner: "Developed exoskeleton-glove teleoperation pipelines for multi-DoF dexterous hands during my internship at PsiBot, connecting glove inputs to kinematic retargeting, visualization, and hardware control."
+  highlights:
+    - "Adapted glove motion to Wuji (20 DoF) and DH01 (21 DoF) hands with Pinocchio forward kinematics and NLopt SLSQP retargeting."
+    - "Used fingertip and pinch objectives, joint constraints, and regularization to map human motion to robot hand kinematics."
+    - "Integrated ROS2 interfaces, RViz visualization, and Ruckig trajectory smoothing for hardware commands."
+  page: "/projects/psibot-dexterous-teleop/"
+  links:
+    code: ""
+    video: "/projects/psibot-dexterous-teleop/#demos"
+    report: ""
+
+- id: psibot-ego-view
+  featured: true
+  status: "Prototype · incomplete"
+  summary: "Explored bimanual hand trajectory reconstruction from egocentric RGB video, followed by robot-motion retargeting and MuJoCo replay."
+  result_summary: "End-to-end integration remained incomplete at internship handoff."
+  title: "Ego-View Video-to-Robot Pipeline"
+  subtitle: "Prototype · end-to-end integration incomplete"
+  period: "May–Aug 2026"
+  role: "Robotics engineering intern at PsiBot"
+  keywords: ["Egocentric Video", "Hand Trajectories", "Motion Retargeting", "MuJoCo"]
+  one_liner: "Prototyped a pipeline for reconstructing world-frame bimanual hand trajectories from egocentric RGB video and retargeting them to robot motion for replay."
+  highlights:
+    - "Combined hand pose estimation, camera tracking, and metric depth for hand trajectory reconstruction."
+    - "Worked on robot-motion retargeting and MuJoCo replay."
+  outcome: "Incomplete prototype: end-to-end integration was not completed by the end of the internship; this was not a completed robot-learning data pipeline."
+  page: "/projects/psibot-ego-view/"
+  links:
+    code: ""
+    video: ""
+    report: ""
+
 - id: libero-grootn1.6
+  featured: true
+  summary: "Fine-tuned the 3B GR00T-N1.6 VLA model on four LIBERO suites, freezing the vision encoder and LLM while training the projector and diffusion decoder."
+  result_summary: "97.8% average success (782/800 episodes); four released checkpoints."
   title: "GR00T-N1.6 Fine-tuning on LIBERO"
   subtitle: "3B VLA model · PEFT training · 97.8% avg success"
   period: "2026"
@@ -17,6 +61,9 @@
     report: ""
 
 - id: libero-rdt
+  featured: true
+  summary: "Built an RDT training and evaluation pipeline on LIBERO, with HDF5 preprocessing, cached T5-XXL embeddings, and a comparison of full fine-tuning against LoRA."
+  result_summary: "Full fine-tuning: 76–94% success by suite; LoRA: approximately 20%."
   title: "RDT Fine-tuning on LIBERO"
   subtitle: "Language-conditioned manipulation (Full FT vs LoRA)"
   period: "2025"
@@ -35,6 +82,9 @@
     report: ""
 
 - id: rlinf-rdt
+  featured: false
+  status: "Evaluation ready · RL fine-tuning incomplete"
+  summary: "Integrated RDT checkpoint evaluation into RLinf, adding 9-DoF joint proprioception and diffusion action sampling. PPO-style training remained blocked by action log-probability support."
   title: "RDT Integration into RLinf"
   subtitle: "Diffusion policy as an RL-compatible agent (BC eval ready)"
   period: "2026"
@@ -54,6 +104,8 @@
 
 
 - id: optitrack-teleop
+  featured: false
+  summary: "Bridged OptiTrack Motive poses to ROS2 PoseStamped/TF for RViz/MoveIt2 visualization, teleoperation demonstration capture, and logging."
   title: "OptiTrack Teleoperation Data Capture"
   subtitle: "NatNet → PoseStamped/TF → RViz/MoveIt2"
   period: "2025"

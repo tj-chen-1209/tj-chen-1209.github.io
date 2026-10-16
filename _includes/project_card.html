@@ -1,0 +1,20 @@
+{% assign p = include.project %}
+<article class="project-card">
+  <div class="project-card__heading">
+    <h3><a href="{{ p.page }}">{{ p.title | escape }}</a></h3>
+    <span class="project-card__period">{{ p.period | escape }}</span>
+  </div>
+  {% if p.status %}<span class="project-status">{{ p.status | escape }}</span>{% endif %}
+  <p>{{ p.summary | default: p.one_liner | escape }}</p>
+  {% if p.result_summary %}<p class="project-card__result">{{ p.result_summary | escape }}</p>{% endif %}
+  <div class="project-card__footer">
+    <ul class="project-tags" aria-label="Project topics">
+      {% for keyword in p.keywords limit:3 %}<li>{{ keyword | escape }}</li>{% endfor %}
+    </ul>
+    <div class="project-links">
+      <a href="{{ p.page }}" aria-label="Details: {{ p.title | escape }}">Project details <span aria-hidden="true">→</span></a>
+      {% if p.links.video and p.links.video != "" %}<a href="{{ p.links.video }}" aria-label="Demos: {{ p.title | escape }}">Watch demos</a>{% endif %}
+      {% if p.links.code and p.links.code != "" %}<a href="{{ p.links.code }}" aria-label="Code: {{ p.title | escape }}">Code</a>{% endif %}
+    </div>
+  </div>
+</article>

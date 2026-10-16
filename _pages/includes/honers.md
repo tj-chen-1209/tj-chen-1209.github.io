@@ -1,6 +1,6 @@
-<span class='anchor' id='-awards'></span>
+<h2 id="-awards" class="home-section-title">Honors &amp; Awards</h2>
 
-# 🎖 Honors & Awards
+- **2026**: HIT Special Scholarship (University-level)
 - **2025.09**: 2024-2025 HIT National Special Scholarship
 - **2025.08:** 2025 World Humanoid Robot Games–Competition Silver Medal
 - **2025.03:** 2024-2025 HIT Excellent Student Worker

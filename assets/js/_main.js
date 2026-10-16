@@ -57,8 +57,7 @@ $(document).ready(function(){
     $(".author__urls-wrapper button").toggleClass("open");
   });
 
-  // init smooth scroll
-  $("a").smoothScroll({offset: -20});
+  // Use native fragment navigation and CSS scroll-margin for sticky headings.
 
   // add lightbox class to all image links
   $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").addClass("image-popup");
