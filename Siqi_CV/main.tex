@@ -169,7 +169,7 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {PsiBot (Lingchu)}{}
+      {PsiBot}{}
       {Robotics Engineering Intern}{May 2026 -- Aug 2026}
       \resumeItemListStart
         \resumeItem{Developed exoskeleton-glove teleoperation and motion retargeting for multi-DoF dexterous hands, including Wuji (20 DoF) and DH01 (21 DoF).}
@@ -201,6 +201,21 @@
   \resumeSubHeadingListStart
 
     \resumeProjectHeading
+      {\textbf{Exoskeleton-Glove Teleoperation for Dexterous Hands} $|$ \emph{ROS2, Retargeting}}{2026}
+      \resumeItemListStart
+        \resumeItem{Mapped exoskeleton-glove motion to Wuji (20 DoF) and DH01 (21 DoF) hands, bridging human and robot hand kinematics.}
+        \resumeItem{Adapted optimization-based retargeting using Pinocchio forward kinematics and NLopt SLSQP, with fingertip and pinch objectives, joint constraints, and regularization.}
+        \resumeItem{Connected ROS2 glove inputs to RViz and hardware command interfaces; integrated Ruckig trajectory smoothing and joint-limit handling for robot-hand control.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Ego-View Video-to-Robot Pipeline (Prototype)} $|$ \emph{Hand Trajectories, MuJoCo}}{2026}
+      \resumeItemListStart
+        \resumeItem{Prototyped world-frame bimanual hand trajectory reconstruction from egocentric RGB video, combining hand pose estimation, camera tracking, and metric depth.}
+        \resumeItem{Worked on robot-motion retargeting and MuJoCo replay; end-to-end integration remained incomplete at internship handoff.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
       {\textbf{GR00T-N1.6 Fine-tuning on LIBERO} $|$ \emph{DeepSpeed ZeRO-2, BF16, LIBERO, VLA}}{2026}
       \resumeItemListStart
         \resumeItem{Fine-tuned NVIDIA GR00T-N1.6 (3B VLA) on LIBERO (4 suites, 40 tasks) using an end-to-end training and evaluation pipeline.}
@@ -209,26 +224,11 @@
       \resumeItemListEnd
 
     \resumeProjectHeading
-      {\textbf{RDT Fine-tuning on LIBERO (Full FT vs LoRA)} $|$ \emph{PyTorch, DeepSpeed, SigLIP, T5-XXL}}{2025}
+      {\textbf{RDT Fine-tuning and RLinf Integration} $|$ \emph{LIBERO, Diffusion Policies}}{2025--2026}
       \resumeItemListStart
-        \resumeItem{Implemented a complete supervised fine-tuning pipeline for Robotics Diffusion Transformer (RDT) on LIBERO, including HDF5 parsing and state/action remapping.}
-        \resumeItem{Added T5-XXL instruction embedding caching to remove redundant encoding and improved training throughput by \(\sim\)30\%.}
-        \resumeItem{Built automated checkpoint evaluation with profiling; found LoRA (rank 8--32) saturates at \(\sim\)20\% while full fine-tuning reaches 76--94\% (suite-dependent).}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{RDT Integration into RLinf} $|$ \emph{RL framework integration, LIBERO, diffusion policy}}{2026}
-      \resumeItemListStart
-        \resumeItem{Integrated a diffusion-based manipulation policy (RDT) into the RLinf framework and enabled checkpoint-based rollout evaluation on LIBERO.}
-        \resumeItem{Aligned observation interfaces by adding 9-DoF joint proprioception (arm + gripper) to env wrappers and distributed I/O.}
-        \resumeItem{Identified the core RL blocker: diffusion sampling does not directly provide action log-probabilities required by PPO-style methods (RL training in progress).}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{OptiTrack $\rightarrow$ ROS2 $\rightarrow$ MoveIt2 Teleop Data Capture} $|$ \emph{ROS2, TF, PoseStamped, MoveIt2}}{2025}
-      \resumeItemListStart
-        \resumeItem{Implemented a motion-capture streaming module that converts OptiTrack Motive (NatNet) rigid-body tracking into ROS2 PoseStamped/TF.}
-        \resumeItem{Mapped the tracked pose into RViz/MoveIt2 for teleoperation demonstration capture, logging, and simulation-side verification.}
+        \resumeItem{Built supervised fine-tuning and evaluation workflows on LIBERO; cached T5-XXL instruction embeddings to improve training throughput by \(\sim\)30\%.}
+        \resumeItem{Compared full fine-tuning (76--94\% success, suite-dependent) with LoRA (\(\sim\)20\%); profiled automated checkpoint evaluation.}
+        \resumeItem{Integrated RDT checkpoint evaluation into RLinf with 9-DoF joint proprioception. PPO-style fine-tuning remained incomplete because diffusion action log-probabilities were not yet supported.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd

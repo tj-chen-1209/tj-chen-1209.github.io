@@ -13,13 +13,11 @@ During my **May–August 2026 internship at PsiBot (灵初)**, I worked on exosk
 ## My Work
 
 - Developed glove-to-hand retargeting pipelines for **Wuji (20 DoF)** and **DH01 (21 DoF)** dexterous hands.
-- Connected ROS2 glove inputs and hand representations to kinematic retargeting, with joint constraints and regularization.
-- Integrated RViz visualization and hardware command interfaces, including trajectory smoothing for robot-hand commands.
+- Adapted optimization-based retargeting using **Pinocchio forward kinematics** and **NLopt SLSQP**, with fingertip and pinch objectives, joint constraints, and regularization.
+- Connected ROS2 glove inputs to RViz visualization and hardware command interfaces, including **Ruckig trajectory smoothing** and joint-limit handling for robot-hand commands.
 
 ## Related Prototype: Ego-View Video to Robot Motion
 
-I also worked on a prototype intended to reconstruct hand trajectories from egocentric video and retarget them to a robot for replay. This involved hand trajectory reconstruction, coordinate alignment, and robot motion retargeting.
-
-**Status:** The end-to-end ego-view pipeline was **not completed** by the end of the internship. This work is presented as a prototype, not a completed data-generation or robot-learning system.
+See the separate [ego-view pipeline project](/projects/psibot-ego-view/) for the hand trajectory reconstruction and retargeting prototype. Its end-to-end integration was not completed by the end of the internship.
 
 The internship implementation is maintained in a private repository.

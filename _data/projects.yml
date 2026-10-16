@@ -6,10 +6,27 @@
   keywords: ["Dexterous Manipulation", "Teleoperation", "Motion Retargeting", "ROS2"]
   one_liner: "Developed exoskeleton-glove teleoperation pipelines for multi-DoF dexterous hands during my internship at PsiBot (灵初), connecting glove inputs to kinematic retargeting, visualization, and hardware control."
   highlights:
-    - "Adapted glove motion to Wuji (20 DoF) and DH01 (21 DoF) hands using kinematic retargeting with joint constraints."
-    - "Integrated ROS2 interfaces, RViz visualization, and trajectory smoothing for hardware commands."
-    - "Also prototyped an ego-view video-to-robot pipeline; end-to-end integration remained incomplete."
+    - "Adapted glove motion to Wuji (20 DoF) and DH01 (21 DoF) hands with Pinocchio forward kinematics and NLopt SLSQP retargeting."
+    - "Used fingertip and pinch objectives, joint constraints, and regularization to map human motion to robot hand kinematics."
+    - "Integrated ROS2 interfaces, RViz visualization, and Ruckig trajectory smoothing for hardware commands."
   page: "/projects/psibot-dexterous-teleop/"
+  links:
+    code: ""
+    video: ""
+    report: ""
+
+- id: psibot-ego-view
+  title: "Ego-View Video-to-Robot Pipeline"
+  subtitle: "Prototype · end-to-end integration incomplete"
+  period: "May–Aug 2026"
+  role: "Robotics engineering intern at PsiBot"
+  keywords: ["Egocentric Video", "Hand Trajectories", "Motion Retargeting", "MuJoCo"]
+  one_liner: "Prototyped a pipeline for reconstructing world-frame bimanual hand trajectories from egocentric RGB video and retargeting them to robot motion for replay."
+  highlights:
+    - "Combined hand pose estimation, camera tracking, and metric depth for hand trajectory reconstruction."
+    - "Worked on robot-motion retargeting and MuJoCo replay."
+  outcome: "Incomplete prototype: end-to-end integration was not completed by the end of the internship; this was not a completed robot-learning data pipeline."
+  page: "/projects/psibot-ego-view/"
   links:
     code: ""
     video: ""
