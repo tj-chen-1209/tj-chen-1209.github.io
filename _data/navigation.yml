@@ -9,6 +9,9 @@ main:
   - title: "Projects"
     url: "/#-projects"
 
+  - title: "Demos"
+    url: "/#-demos"
+
   - title: "Research"
     url: "/#-publications"
 

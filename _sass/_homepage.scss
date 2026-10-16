@@ -10,6 +10,14 @@
   .file-type { font-size: 0.65rem; opacity: 0.85; }
   .home-section-title { margin: 2rem 0 1rem; padding-bottom: 0.6rem; border-bottom: 1px solid #dce3e7; font-size: 1.35rem; line-height: 1.35; }
   .section-intro { color: #596975; font-size: 0.9rem; }
+  .demo-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 1rem 0 2rem; }
+  .demo-card { display: block; min-width: 0; margin: 0; overflow: hidden; border: 1px solid #dce3e7; border-radius: 8px; scroll-margin-top: 5rem; }
+  .demo-card:first-child { grid-column: 1 / -1; }
+  .demo-card video { display: block; width: 100%; height: auto; max-height: 440px; background: #111820; object-fit: contain; }
+  .demo-card figcaption { display: block; width: auto; margin: 0; padding: 1rem; color: #596975; text-align: left; }
+  .demo-card h3 { margin: 0; color: #214f63; font-size: 1rem; line-height: 1.45; }
+  .demo-card p { margin: 0.5rem 0 0.65rem; font-size: 0.83rem; line-height: 1.6; }
+  .demo-card figcaption > a { font-size: 0.78rem; }
   .project-card { margin: 0.85rem 0; padding: 1.15rem 1.2rem; border: 1px solid #dce3e7; border-radius: 8px; }
   .project-card__heading, .experience-entry__heading { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 0.4rem 1rem; }
   .project-card h3, .experience-entry h3 { margin: 0; font-size: 1rem; line-height: 1.5; }
@@ -40,6 +48,7 @@
 
 @media (max-width: 600px) {
   .page__content {
+    .demo-gallery { grid-template-columns: minmax(0, 1fr); }
     .project-card { padding: 1rem; }
     .project-card__heading { display: block; }
     .project-card__period { display: block; margin-top: 0.3rem; }

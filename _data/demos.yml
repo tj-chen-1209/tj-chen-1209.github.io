@@ -1,0 +1,26 @@
+- id: psibot-hand-teleoperation
+  width: 1280
+  height: 720
+  group: teleoperation
+  title: "Dexterous-Hand Teleoperation"
+  description: "Exoskeleton-glove control of a multi-DoF dexterous hand in a hand-only setup."
+  video: /assets/videos/psibot-hand-teleoperation.mp4
+  poster: /assets/videos/psibot-hand-teleoperation.jpg
+
+- id: psibot-robot-teleoperation
+  width: 720
+  height: 1280
+  group: teleoperation
+  title: "Teleoperation on a Real Robot"
+  description: "Deployment of the dexterous-hand teleoperation system on a real robot."
+  video: /assets/videos/psibot-robot-teleoperation.mp4
+  poster: /assets/videos/psibot-robot-teleoperation.jpg
+
+- id: psibot-vla-deployment
+  width: 720
+  height: 1280
+  group: vla
+  title: "VLA Deployment at PsiBot"
+  description: "A demo from my work on deploying a vision-language-action (VLA) model at PsiBot."
+  video: /assets/videos/psibot-vla-deployment.mp4
+  poster: /assets/videos/psibot-vla-deployment.jpg

@@ -16,6 +16,8 @@ redirect_from:
 
 {% include_relative includes/projects.md %}
 
+{% include_relative includes/demos.md %}
+
 {% include_relative includes/pub.md %}
 
 {% include_relative includes/news.md %}

@@ -7,7 +7,7 @@
   period: "May–Aug 2026"
   role: "Robotics engineering intern at PsiBot"
   keywords: ["Dexterous Manipulation", "Teleoperation", "Motion Retargeting", "ROS2"]
-  one_liner: "Developed exoskeleton-glove teleoperation pipelines for multi-DoF dexterous hands during my internship at PsiBot (灵初), connecting glove inputs to kinematic retargeting, visualization, and hardware control."
+  one_liner: "Developed exoskeleton-glove teleoperation pipelines for multi-DoF dexterous hands during my internship at PsiBot, connecting glove inputs to kinematic retargeting, visualization, and hardware control."
   highlights:
     - "Adapted glove motion to Wuji (20 DoF) and DH01 (21 DoF) hands with Pinocchio forward kinematics and NLopt SLSQP retargeting."
     - "Used fingertip and pinch objectives, joint constraints, and regularization to map human motion to robot hand kinematics."
@@ -15,7 +15,7 @@
   page: "/projects/psibot-dexterous-teleop/"
   links:
     code: ""
-    video: ""
+    video: "/projects/psibot-dexterous-teleop/#demos"
     report: ""
 
 - id: psibot-ego-view

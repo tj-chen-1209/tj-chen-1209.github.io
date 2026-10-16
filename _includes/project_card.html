@@ -13,6 +13,7 @@
     </ul>
     <div class="project-links">
       <a href="{{ p.page }}" aria-label="Details: {{ p.title | escape }}">Project details <span aria-hidden="true">→</span></a>
+      {% if p.links.video and p.links.video != "" %}<a href="{{ p.links.video }}" aria-label="Demos: {{ p.title | escape }}">Watch demos</a>{% endif %}
       {% if p.links.code and p.links.code != "" %}<a href="{{ p.links.code }}" aria-label="Code: {{ p.title | escape }}">Code</a>{% endif %}
     </div>
   </div>
