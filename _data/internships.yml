@@ -6,7 +6,7 @@
     - "/images/logos/psibot.png"
   bullets:
     - "Trained vision-language-action (VLA) models to perform material sorting."
-    - "Explored an ego-view video-to-robot pipeline; end-to-end integration remained incomplete."
+    - "Developed exoskeleton-glove teleoperation for Wuji (20 DoF) and DH01 (21 DoF) hands, including retargeting and ROS2 hardware integration."
 
 - org: "PKU–PsiBot Joint Lab"
   location: "Beijing, China"
