@@ -7,8 +7,8 @@
 
 # Site Settings
 title                    : "Siqi Chen / Ice"
-description              : "A first-year master student at AIUS (HIT, China)."
-repository               : "tj-chen-1209/chentingjia.github.io"
+description              : "Master’s student at HIT working on dexterous manipulation and robot learning. Seeking RA or research internship opportunities in 2027."
+repository               : "tj-chen-1209/tj-chen-1209.github.io"
 google_scholar_stats_use_cdn : true
 
 
@@ -83,6 +83,7 @@ exclude:
   - vendor
   - google_scholar_crawler
   - github_myprofile_updater
+  - Siqi_CV
 keep_files:
   - .git
   - .svn

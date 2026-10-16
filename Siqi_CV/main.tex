@@ -1,0 +1,258 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\ifdefined\pdfglyphtounicode
+  \input{glyphtounicode}
+\fi
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\ifdefined\pdfgentounicode
+  \pdfgentounicode=1
+\fi
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Siqi Chen} \\ \vspace{1pt}
+    \small \href{mailto:chentingjia1209@163.com}{\underline{chentingjia1209@163.com}} $|$
+    \href{https://github.com/tj-chen-1209}{\underline{github.com/tj-chen-1209}} $|$
+    \href{https://tj-chen-1209.github.io}{\underline{tj-chen-1209.github.io}}
+\end{center}
+
+\vspace{-6pt}
+\begin{center}
+\small \textbf{Seeking Research Assistant (RA) or research internship opportunities in 2027.}
+\end{center}
+\vspace{-10pt}
+
+{\small\textbf{Research interests:} Dexterous manipulation, robot learning, vision-language-action models, and reinforcement learning for robot control.\par}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Harbin Institute of Technology (HIT)}{Harbin, China}
+      {M.Eng. in Control Theory and Control Engineering (School of Astronautics)}{Sep 2025 -- Present}
+
+
+    \resumeSubheading
+      {Harbin Institute of Technology (HIT)}{Harbin, China}
+      {B.Eng. (School of Astronautics)}{Sep 2021 -- Jun 2025}
+      \resumeItemListStart
+        \resumeItem{GPA: 91.21/100 (overall rank: top 15\%).}
+        \resumeItem{Coursework: Calculus (98), Linear Algebra (96), Probability \& Statistics (94), Automatic Control Theory (95.8).}
+        \resumeItem{English: CET-6 507.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-----------
+\section{Research Manuscript}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {ResMerge}{Under Review}
+      {Fourth author}{}
+      \resumeItemListStart
+        \resumeItem{Conducted small-model ablation experiments on LIBERO-Object under a single RTX 4090 setup; implemented evaluation scripts for result aggregation and plotting.}
+        \resumeItem{Created core paper figures (teaser and method diagram) to improve clarity of the submission.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {PsiBot (Lingchu)}{}
+      {Robotics Engineering Intern}{May 2026 -- Aug 2026}
+      \resumeItemListStart
+        \resumeItem{Developed exoskeleton-glove teleoperation and motion retargeting for multi-DoF dexterous hands, including Wuji (20 DoF) and DH01 (21 DoF).}
+        \resumeItem{Integrated ROS2 glove inputs, kinematic retargeting with joint constraints, RViz visualization, and trajectory smoothing for hardware commands.}
+        \resumeItem{Prototyped an ego-view video-to-robot pipeline for hand trajectory reconstruction and motion retargeting; end-to-end integration remained incomplete at the end of the internship.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {PKU--PsiBot Joint Lab}{Beijing, China}
+      {Research Intern}{Nov 2025 -- Feb 2026}
+      \resumeItemListStart
+        \resumeItem{Delivered project-oriented engineering support for embodied robotics research, including system integration and experiment tooling.}
+        \resumeItem{Implemented and maintained training/evaluation workflows; improved reproducibility and iteration speed for benchmark experiments.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Standard Robots}{Shenzhen, China}
+      {Embodied AI Intern}{Jul 2025 -- Sep 2025}
+      \resumeItemListStart
+        \resumeItem{Built robot teleoperation and data collection workflows; produced structured logs for downstream learning or debugging.}
+        \resumeItem{Participated in debugging DARWIN-01 electrical bus issues and contributed to NVIDIA Jetson-based development; gained hands-on understanding of the full robot system stack.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\newpage
+\section{Selected Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{GR00T-N1.6 Fine-tuning on LIBERO} $|$ \emph{DeepSpeed ZeRO-2, BF16, LIBERO, VLA}}{2026}
+      \resumeItemListStart
+        \resumeItem{Fine-tuned NVIDIA GR00T-N1.6 (3B VLA) on LIBERO (4 suites, 40 tasks) using an end-to-end training and evaluation pipeline.}
+        \resumeItem{Applied a parameter-efficient recipe: froze vision encoder and LLM; trained the projector and diffusion decoder (\(\sim\)40\% trainable parameters).}
+        \resumeItem{Achieved 97.8\% average success (782/800 episodes) and released 4 benchmark-validated checkpoints on HuggingFace.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{RDT Fine-tuning on LIBERO (Full FT vs LoRA)} $|$ \emph{PyTorch, DeepSpeed, SigLIP, T5-XXL}}{2025}
+      \resumeItemListStart
+        \resumeItem{Implemented a complete supervised fine-tuning pipeline for Robotics Diffusion Transformer (RDT) on LIBERO, including HDF5 parsing and state/action remapping.}
+        \resumeItem{Added T5-XXL instruction embedding caching to remove redundant encoding and improved training throughput by \(\sim\)30\%.}
+        \resumeItem{Built automated checkpoint evaluation with profiling; found LoRA (rank 8--32) saturates at \(\sim\)20\% while full fine-tuning reaches 76--94\% (suite-dependent).}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{RDT Integration into RLinf} $|$ \emph{RL framework integration, LIBERO, diffusion policy}}{2026}
+      \resumeItemListStart
+        \resumeItem{Integrated a diffusion-based manipulation policy (RDT) into the RLinf framework and enabled checkpoint-based rollout evaluation on LIBERO.}
+        \resumeItem{Aligned observation interfaces by adding 9-DoF joint proprioception (arm + gripper) to env wrappers and distributed I/O.}
+        \resumeItem{Identified the core RL blocker: diffusion sampling does not directly provide action log-probabilities required by PPO-style methods (RL training in progress).}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{OptiTrack $\rightarrow$ ROS2 $\rightarrow$ MoveIt2 Teleop Data Capture} $|$ \emph{ROS2, TF, PoseStamped, MoveIt2}}{2025}
+      \resumeItemListStart
+        \resumeItem{Implemented a motion-capture streaming module that converts OptiTrack Motive (NatNet) rigid-body tracking into ROS2 PoseStamped/TF.}
+        \resumeItem{Mapped the tracked pose into RViz/MoveIt2 for teleoperation demonstration capture, logging, and simulation-side verification.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Learning \& Embodied AI}{: Reinforcement Learning, Imitation Learning, Diffusion Policies, VLA fine-tuning, Benchmarking \& Ablations} \\
+     \textbf{Robotics}{: ROS2, dexterous-hand teleoperation, motion retargeting, trajectory smoothing, data logging, LIBERO, RViz/MoveIt2} \\
+     \textbf{ML/Systems}{: PyTorch, DeepSpeed, CUDA, distributed training/evaluation, wandb} \\
+     \textbf{Programming}{: Python, C++, Linux, Git}
+    }}
+ \end{itemize}
+
+ 
+%-----------AWARDS-----------
+\section{Awards}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Silver Medal, 2025 World Humanoid Robot Games (Material Sorting Track)}{}{Operator \& Algorithm Developer}{Aug 2025}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

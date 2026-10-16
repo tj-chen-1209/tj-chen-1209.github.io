@@ -1,3 +1,20 @@
+- id: psibot-dexterous-teleop
+  title: "Exoskeleton-Glove Teleoperation for Dexterous Hands"
+  subtitle: "Glove-to-hand motion retargeting · ROS2 integration"
+  period: "May–Aug 2026"
+  role: "Robotics engineering intern at PsiBot"
+  keywords: ["Dexterous Manipulation", "Teleoperation", "Motion Retargeting", "ROS2"]
+  one_liner: "Developed exoskeleton-glove teleoperation pipelines for multi-DoF dexterous hands during my internship at PsiBot (灵初), connecting glove inputs to kinematic retargeting, visualization, and hardware control."
+  highlights:
+    - "Adapted glove motion to Wuji (20 DoF) and DH01 (21 DoF) hands using kinematic retargeting with joint constraints."
+    - "Integrated ROS2 interfaces, RViz visualization, and trajectory smoothing for hardware commands."
+    - "Also prototyped an ego-view video-to-robot pipeline; end-to-end integration remained incomplete."
+  page: "/projects/psibot-dexterous-teleop/"
+  links:
+    code: ""
+    video: ""
+    report: ""
+
 - id: libero-grootn1.6
   title: "GR00T-N1.6 Fine-tuning on LIBERO"
   subtitle: "3B VLA model · PEFT training · 97.8% avg success"

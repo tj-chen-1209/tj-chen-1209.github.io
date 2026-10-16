@@ -1,3 +1,14 @@
+- org: "PsiBot (灵初)"
+  start: "2026-05"
+  end: "2026-08"
+  role: "Robotics Engineering Intern"
+  logos:
+    - "/images/logos/psibot.png"
+  bullets:
+    - "Developed exoskeleton-glove teleoperation and motion retargeting for multi-DoF dexterous hands, including Wuji (20 DoF) and DH01 (21 DoF)."
+    - "Integrated ROS2 glove inputs, kinematic retargeting, joint-limit handling, and trajectory smoothing for visualization and hardware control."
+    - "Prototyped an ego-view video-to-robot pipeline for hand trajectory reconstruction and retargeting; the end-to-end pipeline remained incomplete at the end of the internship."
+
 - org: "PKU–PsiBot Joint Lab"
   location: "Beijing, China"
   start: "2025-11"

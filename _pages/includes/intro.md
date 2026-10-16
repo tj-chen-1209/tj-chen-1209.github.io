@@ -1,7 +1,7 @@
-I am a first-year Master’s student at the [Key Laboratory of Autonomous Intelligent Unmanned Systems(AIUS)](https://aius.hit.edu.cn/), Harbin Institute of Technology (HIT), China.
+I am a Master’s student at the [Key Laboratory of Autonomous Intelligent Unmanned Systems (AIUS)](https://aius.hit.edu.cn/), Harbin Institute of Technology (HIT), China.
 
-My research interests lie in **Embodied AI and Robotics**, especially **learning-based manipulation / dexterous skills** and **reinforcement learning for robot control**. I am also actively exploring **vision-language-action (VLA)** models and other learning-based control approaches for generalizable manipulation.
+My research interests lie in **Embodied AI and Robotics**, especially **dexterous manipulation**, **robot learning**, and **vision-language-action (VLA) models**. My experience spans dexterous-hand teleoperation, demonstration data collection, and policy fine-tuning and evaluation. I am also interested in reinforcement learning for generalizable robot control.
 
-I am seeking a **visiting research internship throughout 2026**(6–12 months). I hope to work under close mentorship, contribute to a strong research direction, and deliver **high-quality, publishable results**, with the goal of making **one top-tier conference submission in 2026**.
+I am seeking **Research Assistant (RA) or research internship opportunities in 2027**, with a focus on dexterous manipulation and embodied learning. I hope to contribute hands-on robotics engineering, training and evaluation pipelines, and careful experiments to a research team.
 
-If you are interested in collaboration or hosting, please feel free to contact me at **[chentingjia1209@163.com](mailto:chentingjia1209@163.com)**. You can also download my CV [here](/assets/resume_2026.pdf).
+For opportunities or collaboration, please contact me at **[chentingjia1209@163.com](mailto:chentingjia1209@163.com)**. Download my **[CV](/assets/resume_2027.pdf)**.

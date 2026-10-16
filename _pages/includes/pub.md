@@ -1,6 +1,6 @@
 <span class='anchor' id='-publications'></span>
 
-# 📝 Publications
+# 📝 Research Manuscripts
 
 <div style="border: 1px solid #e5e7eb; border-radius: 14px; padding: 16px 18px; margin: 12px 0;">
   <div style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;">
@@ -10,7 +10,7 @@
       </div>
       <div style="margin-top:6px; opacity:0.9;">
         <span style="display:inline-block; padding:2px 10px; border-radius:999px; border:1px solid #e5e7eb; font-size:0.85rem;">
-          ICML 2026 · Under Review
+          Under Review
         </span>
         <span style="display:inline-block; padding:2px 10px; border-radius:999px; border:1px solid #e5e7eb; font-size:0.85rem; margin-left:6px;">
           4th Author
